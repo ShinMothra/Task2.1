@@ -1,0 +1,36 @@
+/* Общие стили для body и контейнера */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Стили для изображений */
+img {
+  margin: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Стили для футера */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer span {
+  font-size: 14px;
+}
