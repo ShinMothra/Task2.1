@@ -1,36 +1,61 @@
-/* Общие стили для body и контейнера */
-body {
-  font-family: Arial, sans-serif;
+/* Общие стили для body и html */
+body, html {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
+  color: #333;
 }
 
+/* Контейнер */
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  max-width: 1000px;
+  margin: 20px auto;
   padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
-/* Стили для изображений */
+/* Заголовки */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+
+/* Изображения */
 img {
-  margin: 10px;
   max-width: 100%;
   height: auto;
-}
-
-/* Стили для футера */
-.footer {
-  position: fixed;
-  bottom: 0;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
   width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
 }
 
-.footer span {
-  font-size: 14px;
+/* Футер */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Ссылки */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Медиа запрос для мобильных устройств */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
 }
